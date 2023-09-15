@@ -1,15 +1,14 @@
 ---
 export interface Props {
-	title: string;
-	time: string;
-	tags: string[];
-	slug: string;
+	title: string
+	time: string
+	tags: string[]
+	slug: string
 }
 
 const { title, time, tags, slug } = Astro.props
 
-console.log(`El slug recibido en la tarjeta es: ${slug}`);
-
+//console.log(`El slug recibido en la tarjeta es: ${slug}`);
 ---
 
 <!--
@@ -34,15 +33,12 @@ console.log(`El slug recibido en la tarjeta es: ${slug}`);
 
 		<div class="mt-4 flex flex-wrap gap-1">
 			{
-				tags.map((item)=>(
-				<span
-				class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600"
-			>
-				{item}
-			</span>
+				tags.map((item) => (
+					<span class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+						{item}
+					</span>
 				))
 			}
-			
 		</div>
 	</div>
 </article>
