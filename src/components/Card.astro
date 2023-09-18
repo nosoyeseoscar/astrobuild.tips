@@ -7,7 +7,6 @@ export interface Props {
 }
 
 const { title, time, tags, slug } = Astro.props
-//console.log(`El slug recibido en la tarjeta es: ${slug}`);
 const event = new Date(time);
 const date = event.toDateString();
 ---
